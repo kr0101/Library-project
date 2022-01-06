@@ -10,15 +10,36 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-/* body{
-    background-color
-} */
+
+
+    .logoHeader{
+        font-size:1em ;
+    }
+    section{
+        padding:80px 20px
+    }
+    
+    .cards img{
+        height: 150px;
+        width: 0px;
+    }
+    .cards > .card{
+        color: blue;
+        padding-top: 5px;
+        margin-bottom: 16px;
+    }
+
+
+   .logoHeader{
+        color: red;
+   }
+
 header{
    background-color:rgba(216, 250, 250, 0.76);
     width: 100%;
     padding: 10px 200px;
     position: fixed;
-    margin: auto;
+    /* margin: auto; */
     z-index: 999;
     display: flex;
     justify-content:space-between;
@@ -72,10 +93,11 @@ section{
  
 }
 .Welcome{
-   font-weight:800;
-   color: rgba(40, 7, 226, 0.664);
+   text-align: center;
+   color: rgba(42, 6, 243, 0.973);
    font-size: 22px;
    font-weight: 900;
+ 
 }
 .span-main{
     font-weight:800;
@@ -154,5 +176,79 @@ section{
     background-color: royalblue;
 }
 
+
+@media only screen and (max-width: 600px){ 
+    
+    .header{
+        padding: 5px 15px;
+       
+      }
+      #navs a{
+          padding-left: 10px;
+          color: red
+      }
+      .logoHeader{
+          font-size: 20px;
+         
+      }
+      .main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background : url(img/cover\ img.jpg) no-repeat;
+        background-size: cover;
+        background-position:60% ;
+        /* margin-bottom: -10px; */
+      }
+      #Welcome{
+         display:flex;
+         justify-content: center;
+          font-size: 33px;
+          box-sizing:content-box;
+          /* text-align: center; */
+      }
+      .Par-welcome{
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      }     
+      .hr{
+        visibility: hidden;
+      }
+    
+      .acc a{
+        font-size: 20px;
+        text-decoration:none;
+        color: rgba(6, 238, 226, 0.801);
+        margin-right:5px;
+        font-size: 20px;
+        right: 50px;
+     }
+     .acc{
+      position: absolute;
+      padding-top: 10px;
+      left: 56%;
+      right: 10%;
+      top: 420px;
+        justify-content: center;
+     }
+/* section 2 */
+.title{
+    box-sizing: border-box;
+    width: 200px;
+    height: 50px;
+    padding: 3px;  
+   margin-left:-80px;
+    border: 4px solid blue;
+     }
+
+
+}
+
+
+
+
+    
 
  
